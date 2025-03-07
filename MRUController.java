@@ -9,6 +9,7 @@ import com.mru.service.MRUService;
 import com.mru.entity.Laptops;
 import java.util.List;
 import com.mru.entity.Mobiles;
+import com.mru.entity.Watches;
 @RestController
 @CrossOrigin("*")
 public class MRUController {
@@ -23,6 +24,11 @@ public class MRUController {
 	public List<Mobiles> getMobiles(){
 		return service.getAllMobiles();		
 	}
+	@GetMapping("/watches")
+	public List<Watches> getWatches(){
+	    return service.getAllWatches();		
+	}
+
 	
 
 }
