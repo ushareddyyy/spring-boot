@@ -2,12 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    align-items: center;
+    gap: 10px;
 }
 .child{
     border: 1px solid gray;
-    padding: 5px;
+    padding: 10px;
     border-radius: 20px;
-    height: 350px;
+}
+
+img{
+    width: 250px
 }
