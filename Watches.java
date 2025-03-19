@@ -5,12 +5,12 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Watches {
-    @Id
-    private int id;
-    private String pname;
-    private int pcost;
-    private String pimage;
-    private int qty;
+	@Id
+	private int id;
+	private String pname;
+	private double pcost;
+	private String pimage;
+	private int pqty;
 	public int getId() {
 		return id;
 	}
@@ -23,10 +23,10 @@ public class Watches {
 	public void setPname(String pname) {
 		this.pname = pname;
 	}
-	public int getPcost() {
+	public double getPcost() {
 		return pcost;
 	}
-	public void setPcost(int pcost) {
+	public void setPcost(double pcost) {
 		this.pcost = pcost;
 	}
 	public String getPimage() {
@@ -35,31 +35,29 @@ public class Watches {
 	public void setPimage(String pimage) {
 		this.pimage = pimage;
 	}
-	public int getQty() {
-		return qty;
+	public int getPqty() {
+		return pqty;
 	}
-	public void setQty(int qty) {
-		this.qty = qty;
+	public void setPqty(int pqty) {
+		this.pqty = pqty;
 	}
 	@Override
 	public String toString() {
-		return "Watches [id=" + id + ", pname=" + pname + ", pcost=" + pcost + ", pimage=" + pimage + ", qty=" + qty
-				+ ", getId()=" + getId() + ", getPname()=" + getPname() + ", getPcost()=" + getPcost()
-				+ ", getPimage()=" + getPimage() + ", getQty()=" + getQty() + ", getClass()=" + getClass()
-				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+		return "Watches [id=" + id + ", pname=" + pname + ", pcost=" + pcost + ", pimage=" + pimage + ", pqty=" + pqty
+				+ "]";
 	}
 	public Watches() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Watches(int id, String pname, int pcost, String pimage, int qty) {
+	public Watches(int id, String pname, double pcost, String pimage, int pqty) {
 		super();
 		this.id = id;
 		this.pname = pname;
 		this.pcost = pcost;
 		this.pimage = pimage;
-		this.qty = qty;
+		this.pqty = pqty;
 	}
-
-    
+	
+	
 }

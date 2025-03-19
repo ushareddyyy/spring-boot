@@ -45,9 +45,7 @@ public class MRUService {
 
     // Login User
     public String loginUser(String username, String password) {
-        
-		Optional<User> existingUser = userRepo.findByUsername(username);
-        
+     	Optional<User> existingUser = userRepo.findByUsername(username);
         if (existingUser.isPresent() && existingUser.get().getPassword().equals(password)) {
             return "Login successful!";
         }

@@ -4,7 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-public class Mobiles {
+public class Laptops {
 	@Id
 	private int id;
 	private String pname;
@@ -43,14 +43,14 @@ public class Mobiles {
 	}
 	@Override
 	public String toString() {
-		return "Mobiles [id=" + id + ", pname=" + pname + ", pcost=" + pcost + ", pimage=" + pimage + ", pqty=" + pqty
+		return "Laptops [id=" + id + ", pname=" + pname + ", pcost=" + pcost + ", pimage=" + pimage + ", pqty=" + pqty
 				+ "]";
 	}
-	public Mobiles() {
+	public Laptops() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Mobiles(int id, String pname, double pcost, String pimage, int pqty) {
+	public Laptops(int id, String pname, double pcost, String pimage, int pqty) {
 		super();
 		this.id = id;
 		this.pname = pname;
@@ -58,5 +58,6 @@ public class Mobiles {
 		this.pimage = pimage;
 		this.pqty = pqty;
 	}
+	
 	
 }
